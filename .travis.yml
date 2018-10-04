@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+- node
+install: true
+script: echo "Skipping build"
+deploy:
+  edge: true
+  provider: bluemixcloudfoundry
+  username: apikey
+  organization: tdugger@us.ibm.com
+  space: dev
+  manifest: manifest.yml
+  password:
+    secure: D3DQ2YutLWQYHBnJ9jKetpbnT1B0HcTeKvdrVuq1RMG7oqalG42wf/FgfjnU4eV9pdL9JdhHzZnblebi9rZ2suee3k0SWUN2pZIK62ZtcPRfBi2vyDaW0adI50WK3hDO+PaLZX2VK3t6+YBtLwZdlKht42Kz5CxYDtkGURTJaqanlAoMvfLz/a27TradgMs4pL7nssfzL56dhgtvCvo5hxRJcaLguz20Tdjc8iEBPlGuENvS14O9QxELJTTFeaP66ZAjvdBR2gAXpNFCnkI/6QJ3NJbkHxpiy6McwLYlr5xzhAbG4tyf8Da90SrjalJ2ZoVv5p88+LoYPbYdyS0x/rSloMl5utJmKy6HAmB0EibTXJQu39xta+WqJ0mTXfkF/gEdz36xeAa7b6oGZja/ue1MlrePePi5SRXvwCzEx56sSNK+vP4f7zDsk0lE8EgNzy7np+hLTgsvyAgrSURsMYYDBQSrMqnHjf0SUSBLPgPr6JSRSdxYpLm2dy0xlmOU7BNe/J3KwQNEdC0BJQr7NUGhFxha10rCBpIL9tMKyqZosDnkItBT5QtJr9ZX0ekehfvU1GWQqPRDsKOLmCDD5Vlr+ig9CaXae3txIvIudfxbI6/4vTx75Zx8LPeWyEsYMmV21FbA0XEcTd23kpN5WEo8zVD2zKx65Fu3fbsY56c=

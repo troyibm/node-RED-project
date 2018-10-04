@@ -1,0 +1,4 @@
+applications:
+- name: troy-node-red
+  memory: 256MB
+  instances: 1

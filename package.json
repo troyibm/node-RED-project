@@ -2,11 +2,19 @@
     "name": "node-RED-project",
     "description": "A Node-RED Project",
     "version": "0.0.1",
-    "dependencies": {},
+    "dependencies": {
+	"node-red": "0.18.x"
+    },
+    "scripts": {
+      "start": "node --max-old-space-size=160 ./node_modules/node-red/red.js --userDir . --settings ./settings.js flows_TDs-MacBook-Pro.local.json"
+    },
     "node-red": {
         "settings": {
             "flowFile": "flows_TDs-MacBook-Pro.local.json",
             "credentialsFile": "flows_TDs-MacBook-Pro.local_cred.json"
         }
+    },
+    "engines": {
+        "node": "8.x"
     }
 }
